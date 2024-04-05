@@ -11,7 +11,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Link from "next/link"
 import React from "react"
+import CustomLink from "./link"
 
 
 type MenuButtonProps = {
@@ -25,31 +27,12 @@ export function MenuButton({ children }: MenuButtonProps) {
         <Button variant="secondary" className="sm:hidden">{children}</Button>
       </SheetTrigger>
       <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when {"you're"} done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
+        <div className="flex flex-col space-y-3">
+          <CustomLink href="/" className="hover:bg-zinc-500 py-2 px-4 hover:rounded hover:text-white duration-500">Home</CustomLink>
+          <CustomLink href="/" className="hover:bg-zinc-500 py-2 px-4 hover:rounded hover:text-white duration-500">Contato</CustomLink>
+          <CustomLink href="/" className="hover:bg-zinc-500 py-2 px-4 hover:rounded hover:text-white duration-500">Sobre</CustomLink>
         </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
+
       </SheetContent>
     </Sheet>
   )
