@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import {
@@ -26,13 +26,10 @@ export function MenuButton({ children }: MenuButtonProps) {
       <SheetTrigger asChild>
         <Button variant="secondary" className="sm:hidden">{children}</Button>
       </SheetTrigger>
-      <SheetContent>
-        <div className="flex flex-col space-y-3">
-          <CustomLink href="/" className="hover:bg-zinc-500 py-2 px-4 hover:rounded hover:text-white duration-500">Home</CustomLink>
-          <CustomLink href="/contato" className="hover:bg-zinc-500 py-2 px-4 hover:rounded hover:text-white duration-500">Contato</CustomLink>
-          <CustomLink href="/" className="hover:bg-zinc-500 py-2 px-4 hover:rounded hover:text-white duration-500">Sobre</CustomLink>
-        </div>
-
+      <SheetContent className="space-y-2">
+        <CustomLink href="/" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Home</CustomLink>
+        <CustomLink href="/portifolio" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Protifólio</CustomLink>
+        <CustomLink href="/sobre" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Sobre</CustomLink>
       </SheetContent>
     </Sheet>
   )

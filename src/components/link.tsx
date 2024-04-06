@@ -1,14 +1,15 @@
 import Link, { LinkProps, } from 'next/link'
-import React, { PropsWithChildren, ReactNode } from 'react'
+import { PropsWithChildren, ReactNode } from 'react'
 
-type LinkProp = LinkProps & {
-  children: ReactNode
+
+type LinkProp = PropsWithChildren & {
+  href: string
   className?: string
 }
 
-const CustomLink = ({ children, className, ...props }: LinkProp,) => {
+const CustomLink = ({ className, href, children, ...props }: LinkProp,) => {
   return (
-    <Link {...props} className={className} >{children}</Link>
+    <Link href={href} {...props} className={className} >{children}</Link>
   )
 }
 

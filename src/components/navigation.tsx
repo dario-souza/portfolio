@@ -3,6 +3,8 @@ import React from 'react'
 import CustomLink from './link'
 import { AlignJustify } from 'lucide-react'
 import { MenuButton } from './menu-button'
+import { buttonVariants } from './ui/button'
+import Link from 'next/link'
 
 const NavBarHeader = () => {
   return (
@@ -14,9 +16,9 @@ const NavBarHeader = () => {
             <AlignJustify />
           </MenuButton>
           <div className="hidden space-x-3 sm:flex" >
-            <CustomLink href="/" className="block p-4 hover:bg-slate-300 transition-all duration-500">Home</CustomLink>
-            <CustomLink href="/" className="block p-4 hover:bg-slate-300 transition-all duration-500">Contato</CustomLink>
-            <CustomLink href="/" className="block p-4 hover:bg-slate-300 transition-all duration-500">Projetos</CustomLink>
+            <CustomLink href="/" className={`${buttonVariants({ variant: 'outline' })}`} >Home</CustomLink>
+            <CustomLink href="/portifolio" className={`${buttonVariants({ variant: 'outline' })}`} >Protifólio</CustomLink>
+            <CustomLink href="/sobre" className={`${buttonVariants({ variant: 'outline' })}`} >Sobre</CustomLink>
           </div>
         </nav>
       </div>
