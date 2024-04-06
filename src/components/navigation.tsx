@@ -17,8 +17,8 @@ const NavBarHeader = () => {
           </MenuButton>
           <div className="hidden space-x-3 sm:flex" >
             <CustomLink href="/" className={`${buttonVariants({ variant: 'outline' })}`} >Home</CustomLink>
-            <CustomLink href="/portifolio" className={`${buttonVariants({ variant: 'outline' })}`} >Protifólio</CustomLink>
-            <CustomLink href="/sobre" className={`${buttonVariants({ variant: 'outline' })}`} >Sobre</CustomLink>
+            <CustomLink href="/portfolio" className={`${buttonVariants({ variant: 'outline' })}`} >Protifólio</CustomLink>
+            <CustomLink href="/about" className={`${buttonVariants({ variant: 'outline' })}`} >Sobre</CustomLink>
           </div>
         </nav>
       </div>
