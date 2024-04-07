@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBarHeader from "@/components/navigation";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NavBarHeader />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
