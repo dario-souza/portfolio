@@ -14,6 +14,7 @@ import {
 import Link from "next/link"
 import React from "react"
 import CustomLink from "./link"
+import { ModeToggle } from "./theme"
 
 
 type MenuButtonProps = {
@@ -24,12 +25,13 @@ export function MenuButton({ children }: MenuButtonProps) {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="secondary" className="sm:hidden">{children}</Button>
+        <Button variant="ghost" className="sm:hidden">{children}</Button>
       </SheetTrigger>
       <SheetContent className="space-y-2">
         <CustomLink href="/" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Home</CustomLink>
         <CustomLink href="/portfolio" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Protifólio</CustomLink>
         <CustomLink href="/about" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Sobre</CustomLink>
+        <ModeToggle />
       </SheetContent>
     </Sheet>
   )
