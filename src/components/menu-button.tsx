@@ -27,7 +27,7 @@ export function MenuButton({ children }: MenuButtonProps) {
       <SheetTrigger asChild>
         <Button variant="ghost" className="sm:hidden">{children}</Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="space-y-2">
         <CustomLink href="/">Home</CustomLink>
         <CustomLink href="/portfolio">Protifólio</CustomLink>
         <CustomLink href="/about">Sobre</CustomLink>
