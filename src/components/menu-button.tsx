@@ -27,10 +27,10 @@ export function MenuButton({ children }: MenuButtonProps) {
       <SheetTrigger asChild>
         <Button variant="ghost" className="sm:hidden">{children}</Button>
       </SheetTrigger>
-      <SheetContent className="space-y-2">
-        <CustomLink href="/" >Home</CustomLink>
-        <CustomLink href="/portfolio" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Protifólio</CustomLink>
-        <CustomLink href="/about" className={`${buttonVariants({ variant: 'outline' })} w-full`} >Sobre</CustomLink>
+      <SheetContent>
+        <CustomLink href="/">Home</CustomLink>
+        <CustomLink href="/portfolio">Protifólio</CustomLink>
+        <CustomLink href="/about">Sobre</CustomLink>
         <ModeToggle />
       </SheetContent>
     </Sheet>

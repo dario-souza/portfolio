@@ -1,15 +1,29 @@
-import Link, { LinkProps, } from 'next/link'
-import { PropsWithChildren, ReactNode } from 'react'
+'use client'
+import Link from 'next/link'
+import { PropsWithChildren } from 'react'
+import {
+  NavigationMenu,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle
+} from './ui/navigation-menu'
 
 
 type LinkProp = PropsWithChildren & {
   href: string
-  className?: string
 }
 
-const CustomLink = ({ className, href, children, ...props }: LinkProp,) => {
+const CustomLink = ({ href, children }: LinkProp) => {
   return (
-    <Link href={href} {...props} className={className} >{children}</Link>
+    <NavigationMenu>
+      <NavigationMenuList>
+        <Link href={href} legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            {children}
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuList>
+    </NavigationMenu>
   )
 }
 
