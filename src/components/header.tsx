@@ -2,18 +2,18 @@
 import React from 'react'
 import CustomLink from './link'
 import { AlignJustify } from 'lucide-react'
-import { MenuButton } from './menu-button'
+import { MenuMobile } from './menu-mobile'
 import { ModeToggle } from './theme'
 
-const NavBarHeader = () => {
+export const HeaderComponent = () => {
   return (
     <header className='border-b'>
       <div className='h-16 max-w-screen-lg mx-auto px-3 flex justify-between items-center'>
         <a href="">LOgo</a>
         <nav className="">
-          <MenuButton>
+          <MenuMobile>
             <AlignJustify />
-          </MenuButton>
+          </MenuMobile>
           <div className="hidden sm:flex gap-2 justify-center items-center">
             <CustomLink href="/">Home</CustomLink>
             <CustomLink href="/portfolio">Protifólio</CustomLink>
@@ -26,4 +26,3 @@ const NavBarHeader = () => {
   )
 }
 
-export default NavBarHeader
