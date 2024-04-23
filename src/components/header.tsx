@@ -7,7 +7,7 @@ import { ModeToggle } from './theme'
 
 export const HeaderComponent = () => {
   return (
-    <header className='border-b'>
+    <header className='border-b fixed top-0 w-full backdrop-blur-sm'>
       <div className='h-16 max-w-screen-lg mx-auto px-3 flex justify-between items-center'>
         <a href="">LOgo</a>
         <nav className="">
