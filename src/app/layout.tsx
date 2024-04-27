@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${cn(inter.className)} pt-16`}>
+      <body className={`${cn(inter.className)} pt-16 pb-[5.0625rem] min-h-screen`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <HeaderComponent />
           {children}
