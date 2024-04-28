@@ -22,6 +22,7 @@ export function MenuMobile({ children }: MenuButtonProps) {
         <CustomLink href="/">Home</CustomLink>
         <CustomLink href="/portfolio">Protifólio</CustomLink>
         <CustomLink href="/about">Sobre</CustomLink>
+        <CustomLink href="/contact">Contato</CustomLink>
         <ModeToggle />
       </SheetContent>
     </Sheet>
