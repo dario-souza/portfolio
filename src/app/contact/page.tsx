@@ -6,6 +6,9 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { error } from 'console'
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 
 
 // export const metadata: Metadata = {
@@ -23,7 +26,14 @@ type ContactForm = z.infer<typeof ContactSchema>
 
 
 const ContactPage = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<ContactForm>({ resolver: zodResolver(ContactSchema) })
+  const form = useForm<ContactForm>({
+    resolver: zodResolver(ContactSchema),
+    defaultValues: {
+      email: '',
+      message: '',
+      name: ''
+    }
+  })
 
   const submitForm = (data: ContactForm) => {
     console.log(data.message)
@@ -31,27 +41,45 @@ const ContactPage = () => {
   return (
     <section>
       <Container>
-        <form onSubmit={handleSubmit(submitForm)}>
-          {/* field name */}
-          <div>
-            <label htmlFor="name">Nome</label>
-            <input type="text" {...register('name')} />
-          </div>
-          {errors.name && <span>{errors.name.message}</span>}
-          {/* field Email */}
-          <div>
-            <label htmlFor="email">Email</label>
-            <input type="email" {...register('email')} />
-          </div>
-          {errors.email && <span>{errors.email.message}</span>}
-          {/* field message */}
-          <div>
-            <label className='block' htmlFor="message">Mensagem</label>
-            <textarea {...register('message')} />
-          </div>
-          {errors.message && <span className='block'>{errors.message.message}</span>}
-          <input type="submit" value="Enviar" className='bg-zinc-300 py-2 px-4 rounded' />
-        </form>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(submitForm)}>
+            <FormField control={form.control} name='name' render={({ field }) => {
+              return (
+                <FormItem>
+                  <FormLabel>Nome</FormLabel>
+                  <FormControl>
+                    <Input type='text' {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )
+            }} />
+            <FormField control={form.control} name='email' render={({ field }) => {
+              return (
+                <FormItem>
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                    <Input type='email' {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )
+            }} />
+
+            <FormField control={form.control} name='message' render={({ field }) => {
+              return (
+                <FormItem>
+                  <FormLabel>Mensagem</FormLabel>
+                  <FormControl>
+                    <Input type='text' {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )
+            }} />
+            <Button type="submit">Submit</Button>
+          </form>
+        </Form>
       </Container>
     </section>
   )
