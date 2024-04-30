@@ -32,7 +32,7 @@ const ContactPage = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(submitForm)}>
+      <form className='w-full max-w-[410px]' onSubmit={form.handleSubmit(submitForm)}>
         <FormField control={form.control} name='name' render={({ field }) => {
           return (
             <FormItem>
