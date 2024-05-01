@@ -4,12 +4,14 @@ import CustomLink from './link'
 import { AlignJustify } from 'lucide-react'
 import { MenuMobile } from './menu-mobile'
 import { ModeToggle } from './theme'
+import Logo from './logo'
+import Link from 'next/link'
 
 export const HeaderComponent = () => {
   return (
     <header className='border-b fixed top-0 w-full backdrop-blur-sm'>
       <div className='h-16 max-w-screen-lg mx-auto px-4 md:px-8 flex justify-between items-center'>
-        <a href="">LOgo</a>
+        <Link href="/"><Logo /></Link>
         <nav className="">
           <MenuMobile>
             <AlignJustify />
