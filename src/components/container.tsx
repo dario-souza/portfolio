@@ -1,8 +1,10 @@
+
 import React from 'react'
 
-const Container = ({ children }: { children: React.ReactNode }) => {
+type ContainerProps = React.ComponentProps<'div'>
+const Container = ({ children, ...props }: ContainerProps) => {
   return (
-    <div className="flex justify-center items-center max-w-screen-lg mx-auto px-4 md:px-8 h-[calc(100vh-145px)]">
+    <div {...props} >
       {children}
     </div>
   )
