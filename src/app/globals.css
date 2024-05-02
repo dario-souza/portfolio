@@ -2,23 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .text-anime::after {
-  content: "|";
-  margin-left: 5px;
-  opacity: 1;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-} */
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -72,5 +55,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .fullscreen {
+    @apply flex justify-center items-center max-w-screen-lg mx-auto px-4 md:px-8 h-[calc(100vh-145px)] flex-wrap overflow-y-scroll gap-4;
   }
 }
