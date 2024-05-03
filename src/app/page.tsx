@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 }
 export default function Home() {
   return (
-    <main>
-      <Container className="fullscreen">
-        <HomePagePresentation />
-      </Container>
+    <main className="h-[calc(100vh-145px)] flex justify-center items-center">
+
+      <HomePagePresentation />
+
     </main>
   );
 }
