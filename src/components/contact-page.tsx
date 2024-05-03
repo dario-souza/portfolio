@@ -29,6 +29,7 @@ const ContactPage = () => {
 
   const submitForm = async (data: ContactForm) => {
     await sendEmail(data)
+    form.reset()
   }
 
   return (
