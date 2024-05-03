@@ -7,6 +7,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
+import sendEmail from '@/app/utils/send-email'
 
 const ContactSchema = z.object({
   name: z.string().min(2, 'Você precisa inserir o campo nome'),
@@ -26,8 +27,8 @@ const ContactPage = () => {
     }
   })
 
-  const submitForm = (data: ContactForm) => {
-    console.log(data.message)
+  const submitForm = async (data: ContactForm) => {
+    await sendEmail(data)
   }
 
   return (
