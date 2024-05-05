@@ -8,15 +8,17 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import sendEmail from '@/app/utils/send-email'
+import ContactModal from './modal-contact'
 
 const ContactSchema = z.object({
-  name: z.string().min(2, 'Você precisa inserir o campo nome'),
-  email: z.string().min(2).email('Email obrigatório'),
-  message: z.string().min(5, 'A mensagem precisa ter no mínimo 5 caracteres')
+  name: z.string().min(1, 'O campo nome deve ser preenchido').max(49, 'Esse nome é muito grande my friend'),
+  email: z.string().min(1, 'O campo e-mail está vazio').email('Insira um e-mail válido'),
+  message: z.string().min(10, 'A mensagem precisa ter no mínimo 10 caracteres')
 })
 
 type ContactForm = z.infer<typeof ContactSchema>
 
+/* Component */
 const ContactPage = () => {
   const form = useForm<ContactForm>({
     resolver: zodResolver(ContactSchema),
@@ -26,12 +28,10 @@ const ContactPage = () => {
       name: ''
     }
   })
-
   const submitForm = async (data: ContactForm) => {
     await sendEmail(data)
     form.reset()
   }
-
   return (
     <Form {...form}>
       <form className='w-full max-w-[410px]' onSubmit={form.handleSubmit(submitForm)}>
@@ -69,7 +69,10 @@ const ContactPage = () => {
             </FormItem>
           )
         }} />
-        <Button className='mt-4' type="submit">Submit</Button>
+        <Button className='mt-4' type="submit" disabled={form.formState.isSubmitting}>{form.formState.isSubmitting ? 'Enviando...' : 'Enviar'}</Button>
+        {form.formState.isSubmitSuccessful && (
+          <ContactModal isModal={true} />
+        )}
       </form>
     </Form>
   )
