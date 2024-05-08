@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 const PortfolioPage = () => {
   return (
-    <section className='fullscreen'>
-      {Array.from({ length: 2 }).map((_, index) => (
+    <section className='max-w-screen-lg mx-auto px-4 py-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2  gap-2  sm:gap-4'>
+      {Array.from({ length: 10 }).map((_, index) => (
         <ProjectCards key={index} />
       ))}
     </section>
