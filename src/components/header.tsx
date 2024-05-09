@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export const HeaderComponent = () => {
   return (
-    <header className='border-b fixed top-0 w-full backdrop-blur-sm'>
+    <header className='border-b fixed top-0 w-full backdrop-blur-sm z-20'>
       <div className='h-16 max-w-screen-lg mx-auto px-4 md:px-8 flex justify-between items-center'>
         <Link href="/"><Logo /></Link>
         <nav className="">
