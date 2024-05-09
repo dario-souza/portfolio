@@ -2,22 +2,27 @@ import React from 'react'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
 import Image from 'next/image'
 import { Button } from './ui/button'
+import { Portfolio } from '@/app/type/types-portfolios'
 
-const ProjectCards = () => {
+
+type ProjectsCardsProps = {
+  card: Portfolio
+}
+
+const PortfolioCards = ({ card }: ProjectsCardsProps) => {
   return (
     <Card className='hover:scale-[1.02] transition-all duration-300'>
       <CardHeader>
         <CardTitle>
-          Portifólio 1
+          {card.title}
         </CardTitle>
         <CardDescription>
-          Projeto Dogs
+          {card.subtitle}
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <Image src="/dogs.jpg" height={934} width={910} alt='dog' sizes='100vw' priority className='sm:mb-4' />
-        <p className='hidden sm:block'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in officiis consectetur totam maxime, voluptate beatae facere, hic pariatur quis veritatis voluptatem! Voluptatibus dignissimos saepe, molestias sit facere nulla esse!</p>
-
+        <Image src={card.img} height={934} width={910} alt='dog' sizes='100vw' priority className='sm:mb-4' />
+        <p className='hidden sm:block'>{card.description}</p>
       </CardContent>
       <CardFooter>
         <Button variant="destructive">Saiba mais</Button>
@@ -26,4 +31,4 @@ const ProjectCards = () => {
   )
 }
 
-export default ProjectCards
+export default PortfolioCards
