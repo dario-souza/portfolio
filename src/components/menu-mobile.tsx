@@ -20,7 +20,7 @@ export function MenuMobile({ children }: MenuButtonProps) {
       </SheetTrigger>
       <SheetContent className="space-y-2">
         <CustomLink href="/">Home</CustomLink>
-        <CustomLink href="/portfolio">Protifólio</CustomLink>
+        <CustomLink href="/portfolio">Portifólio</CustomLink>
         <CustomLink href="/about">Sobre</CustomLink>
         <CustomLink href="/contact">Contato</CustomLink>
         <ModeToggle />

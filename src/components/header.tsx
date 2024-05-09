@@ -18,7 +18,7 @@ export const HeaderComponent = () => {
           </MenuMobile>
           <div className="hidden sm:flex gap-2 justify-center items-center">
             <CustomLink href="/">Home</CustomLink>
-            <CustomLink href="/portfolio">Protifólio</CustomLink>
+            <CustomLink href="/portfolio">Portifólio</CustomLink>
             <CustomLink href="/about">Sobre</CustomLink>
             <CustomLink href="/contact">Contato</CustomLink>
             <ModeToggle />
