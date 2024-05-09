@@ -16,7 +16,7 @@ const data: Projects = {
       repo: 'https://github.com/Sh4kaa/todo-list',
       url: 'https://todo-list-dario.vercel.app',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
-      img: '/todo-list.jpg'
+      img: '/todo-list.png'
     },
     {
       id: randomUUID(),
@@ -25,7 +25,7 @@ const data: Projects = {
       repo: 'https://github.com/Sh4kaa/dogs',
       url: 'https://dogs-by-dario.vercel.app',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
-      img: '/projeto-dogs.jpg'
+      img: '/projeto-dogs.png'
     },
     {
       id: randomUUID(),
@@ -34,7 +34,7 @@ const data: Projects = {
       repo: 'https://github.com/Sh4kaa/projeto-repositorios',
       url: 'https://repo-favorito.vercel.app',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
-      img: '/repo-favorito.jpg'
+      img: '/repo-favorito.png'
     },
     {
       id: randomUUID(),
@@ -43,7 +43,7 @@ const data: Projects = {
       repo: 'https://github.com/Sh4kaa/tarefas',
       url: 'https://tarefas-sh4kaa.vercel.app',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
-      img: '/tarefas.jpg'
+      img: '/tarefas.png'
     },
     {
       id: randomUUID(),
@@ -52,7 +52,7 @@ const data: Projects = {
       repo: 'https://github.com/Sh4kaa/pagina-web-com-cms',
       url: 'https://dario-cms.vercel.app',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
-      img: '/pagina-cms.jpg'
+      img: '/pagina-cms.png'
     },
     {
       id: randomUUID(),
@@ -61,7 +61,7 @@ const data: Projects = {
       repo: 'https://github.com/Sh4kaa/project-e-commerce',
       url: 'https://project-e-commerce-dario.vercel.app',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
-      img: '/e-commerce.jpg'
+      img: '/e-commerce.png'
     },
   ]
 
