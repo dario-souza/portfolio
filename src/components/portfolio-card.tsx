@@ -21,7 +21,7 @@ const PortfolioCards = ({ card }: ProjectsCardsProps) => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <Image src={card.img} height={934} width={910} alt='dog' sizes='100vw' priority className='sm:mb-4' />
+        <Image src={card.img} height={550} width={900} alt='dog' sizes='100vw' priority className='sm:mb-4' />
         <p className='hidden sm:block'>{card.description}</p>
       </CardContent>
       <CardFooter>

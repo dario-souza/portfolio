@@ -64,12 +64,11 @@ const data: Projects = {
       img: '/e-commerce.png'
     },
   ]
-
 }
 
 const PortfolioPage = () => {
   return (
-    <section className='max-w-screen-lg mx-auto px-4 py-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2  gap-2  sm:gap-4'>
+    <section className='max-w-screen-lg mx-auto px-4 py-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4'>
       {data.portfolios.map(card => (
         <PortfolioCards key={card.id} card={card} />
       ))}
