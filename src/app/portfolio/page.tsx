@@ -1,8 +1,11 @@
-import PortfolioCards from '@/components/portfolio-card'
+
+import dynamic from 'next/dynamic'
 import { Metadata } from 'next'
 import React from 'react'
 import { Projects } from '../type/types-portfolios'
 import { randomUUID } from 'crypto'
+
+const PortfolioCards = dynamic(() => import('@/components/portfolio-card'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'Dario | Portifólio'
