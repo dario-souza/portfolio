@@ -25,9 +25,9 @@ const PortfolioCards = ({ card }: ProjectsCardsProps) => {
           {card.subtitle}
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className='sm:line-clamp-4 sm:mb-4'>
         <Image src={card.img} height={550} width={900} alt='dog' sizes='100vw' priority className='sm:mb-4' />
-        <p className='hidden sm:block'>{card.description}</p>
+        <p className='hidden sm:block leading-6 text-ellipsis'>{card.description}</p>
       </CardContent>
       <CardFooter>
         {screenSmall ? <Button variant='destructive' size='sm' >Saiba mais</Button> : <Button variant='destructive' >Saiba mais</Button>}

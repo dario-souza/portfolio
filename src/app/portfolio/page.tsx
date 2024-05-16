@@ -18,7 +18,7 @@ const data: Projects = {
       subtitle: 'Aplicação de lista de tarefas',
       repo: 'https://github.com/Sh4kaa/todo-list',
       url: 'https://todo-list-dario.vercel.app',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
+      description: 'Projeto criado com REACTJS, utilizando a CLI CRA(create react app) para estilização do projeto usamos css modules, utilizo também typescript para ter uam segurança a mais nos tipos do javascript. É possivel adicionar tarefas, remover tarefas e editar tarefas',
       img: '/todo-list.png'
     },
     {
@@ -27,7 +27,7 @@ const data: Projects = {
       subtitle: 'Uma espécie de rede social para cachorro',
       repo: 'https://github.com/Sh4kaa/dogs',
       url: 'https://dogs-by-dario.vercel.app',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
+      description: 'Projeto criado com REACTJS, utilizando a CLI CRA(create react app) para estilização do projeto usamos css modules, podemos criar contas de usuário, mas já existe também uma conta padrão, usuário: dog, senha: dog. Os uploads de fotos ficam apenas por 10 minutos no servidor, depois as fotos são deletadas. Esse Projeto é do curso "React Completo" que fiz na plataforma origamid.com onde é possivel aproveitar conceitos, estratégias, boas práticas com react js. O projeto conta também com uma biblioteca de gráficos chamada victory',
       img: '/projeto-dogs.png'
     },
     {
@@ -36,7 +36,7 @@ const data: Projects = {
       subtitle: 'Um site que lista repositórios com suas issues',
       repo: 'https://github.com/Sh4kaa/projeto-repositorios',
       url: 'https://repo-favorito.vercel.app',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
+      description: 'Este é um projeto simples que permite adicionar repositórios famosos do GitHub e exibir informações sobre eles, incluindo detalhes do projeto, issues e o status das issues.',
       img: '/repo-favorito.png'
     },
     {
@@ -45,7 +45,7 @@ const data: Projects = {
       subtitle: 'Aplicação de lista de tarefas',
       repo: 'https://github.com/Sh4kaa/tarefas',
       url: 'https://tarefas-sh4kaa.vercel.app',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
+      description: 'Este Projeto lembra muito um TodoList, mas com um alguns upgrades. O site com conta com autenticação google e foi utilizado o firebase como banco. Você cria uma tarefa, essa tarefa pode ser pública ou privada. Sendo possível compartilhar o link da tarefa com outras pessoas, fazer comentários nas tarefas que são públicas',
       img: '/tarefas.png'
     },
     {
@@ -54,7 +54,7 @@ const data: Projects = {
       subtitle: 'Uma página web com sistema de CMS',
       repo: 'https://github.com/Sh4kaa/pagina-web-com-cms',
       url: 'https://dario-cms.vercel.app',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
+      description: 'Este é um projeto desenvolvido com nextJS introduzindo o conceito de SSG(server-side-rendering) e ISG(incremental-static-regeneration) onde podemos unir um pouco dos dois mundos.',
       img: '/pagina-cms.png'
     },
     {
@@ -63,7 +63,7 @@ const data: Projects = {
       subtitle: 'Um e-commerce',
       repo: 'https://github.com/Sh4kaa/project-e-commerce',
       url: 'https://project-e-commerce-dario.vercel.app',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque officiis inventore. Fugiat quisquam nemo architecto asperiores. Optio, deleniti laborum! Nobis odio natus quidem laudantium. Esse nostrum voluptatum mollitia consectetur!',
+      description: 'Esse é projeto próprio de um protótipo de um site de venda de produtos comtodas as principais funcionalidades de um site de venda. O gerenciamento do carrinho é feito no localStorage onde é possivel persistir os dados. Foi utilizado também uma api para consumo dos dados https://fakestoreapi.com/products.',
       img: '/e-commerce.png'
     },
   ]
