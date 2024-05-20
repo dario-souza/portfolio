@@ -21,13 +21,15 @@ const PortfolioCards = ({ card }: ProjectsCardsProps) => {
         <CardTitle>
           {card.title}
         </CardTitle>
-        <CardDescription>
+        <CardDescription className='line-clamp-1 text-ellipsis'>
           {card.subtitle}
         </CardDescription>
       </CardHeader>
-      <CardContent className='sm:line-clamp-4 sm:mb-4'>
+      <CardContent>
         <Image src={card.img} height={550} width={900} alt='dog' sizes='100vw' priority className='sm:mb-4' />
-        <p className='hidden sm:block leading-6 text-ellipsis'>{card.description}</p>
+        <div className='sm:line-clamp-4 text-ellipsis'>
+          <p className='hidden sm:block leading-6'>{card.description}</p>
+        </div>
       </CardContent>
       <CardFooter>
         {screenSmall ? <Button variant='destructive' size='sm' >Saiba mais</Button> : <Button variant='destructive' >Saiba mais</Button>}
