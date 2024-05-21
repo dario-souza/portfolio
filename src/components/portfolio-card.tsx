@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import { FaReact } from 'react-icons/fa'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
 import Image from 'next/image'
 import { Button } from './ui/button'
@@ -40,13 +41,16 @@ const PortfolioCards = ({ card }: ProjectsCardsProps) => {
             className='hover:text-[#918FF3] transition-all duration-500'
           />
         </Link>
-        <Link href={card.url} className='ml-3' target='_blank'>
+        <Link href={card.url} className='ml-3 mr-auto' target='_blank'>
           <GlobeIcon
             width={25}
             height={25}
             className='hover:text-[#918FF3] transition-all duration-500'
           />
         </Link>
+        <div className='hidden gap-3 min-[850px]:flex'>
+          {card.techs.map((tech, index) => <span className='text-[22px]' key={index}>{tech}</span>)}
+        </div>
       </CardFooter>
     </Card>
   )
