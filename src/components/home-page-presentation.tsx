@@ -4,7 +4,7 @@ import React from 'react'
 
 
 const HomePagePresentation = () => {
-  const text = Typewriter({ words: ['Web Developer', 'Typescripiteiro', ''], loop: true, cursor: true })
+  const text = Typewriter({ words: ['Web Developer', 'Em contrução...',], loop: true, cursor: true })
   return (
     <div>
       <h1 className="text-4xl mb-2 sm:text-5xl md:text-6xl lg:text-8xl">Dario de souza</h1>
