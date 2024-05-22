@@ -43,7 +43,7 @@ const data: Projects = {
       url: 'https://repo-favorito.vercel.app',
       description: 'Este é um projeto simples que permite adicionar repositórios famosos do GitHub e exibir informações sobre eles, incluindo detalhes do projeto, issues e o status das issues.',
       img: '/repo-favorito.png',
-      techs: ['react', 'typescript', 'styled-components']
+      techs: ['react', 'typescript', 'styled-components', 'nextjs']
     },
     {
       id: randomUUID(),

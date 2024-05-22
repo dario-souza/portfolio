@@ -1,6 +1,5 @@
 'use client'
 import React, { ReactElement } from 'react'
-import { FaReact } from 'react-icons/fa'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
 import Image from 'next/image'
 import { Button } from './ui/button'
@@ -8,27 +7,34 @@ import { Portfolio } from '@/app/type/types-portfolios'
 import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 import useMedia from '@/app/hooks/use-media'
-import { SiFirebase, SiPrismic, SiSass, SiTypescript } from 'react-icons/si'
-import { RiNextjsFill } from 'react-icons/ri'
+// icons
+import Firebase from '@/icons/firebase'
+import Prismic from '@/icons/prismic'
+import ReactIcon from '@/icons/react'
+import Sass from '@/icons/sass'
+import Typescipt from '@/icons/typescript'
+import StyledComponents from '@/icons/styled-components'
+// import NextIcon from '@/icons/nextjs'
+import { SiNextdotjs } from 'react-icons/si'
+import { RiNextjsLine } from "react-icons/ri";
+import NextjsIcon from '@/icons/nextjs'
 
 type ProjectsCardsProps = {
   card: Portfolio
 }
 
-
-
 const icons: { [key: string]: ReactElement } = {
-  react: <FaReact />,
-  typescript: <SiTypescript />,
-  prismic: <SiPrismic />,
-  nexjs: <RiNextjsFill />,
-  firebase: <SiFirebase />,
-  sass: <SiSass />
+  react: <ReactIcon />,
+  typescript: <Typescipt />,
+  prismic: <Prismic />,
+  nextjs: <NextjsIcon />,
+  firebase: <Firebase />,
+  sass: <Sass />,
+  'styled-components': <StyledComponents />
 }
 
 const PortfolioCards = ({ card }: ProjectsCardsProps) => {
   const screenSmall = useMedia('(max-width: 600px)')
-
   return (
     <Card className='hover:scale-[1.02] transition-all duration-300'>
       <CardHeader>
@@ -62,7 +68,10 @@ const PortfolioCards = ({ card }: ProjectsCardsProps) => {
           />
         </Link>
         <div className='hidden gap-3 min-[850px]:flex'>
-          {card.techs.map((tech, index) => <span className='text-[22px]' key={index}>{icons[tech]}</span>)}
+          {card.techs.map((tech) => {
+            const IconComponent = icons[tech]
+            return IconComponent ? <span key={tech}>{IconComponent}</span> : null
+          })}
         </div>
       </CardFooter>
     </Card>
