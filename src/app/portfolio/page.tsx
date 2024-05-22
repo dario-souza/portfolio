@@ -23,7 +23,7 @@ const data: Projects = {
       url: 'https://todo-list-dario.vercel.app',
       description: 'Projeto criado com REACTJS, utilizando a CLI CRA(create react app) para estilização do projeto usamos css modules, utilizo também typescript para ter uam segurança a mais nos tipos do javascript. É possivel adicionar tarefas, remover tarefas e editar tarefas',
       img: '/todo-list.png',
-      techs: [<FaReact key={1} />, <SiTypescript key={2} />]
+      techs: ['react', 'typescript']
     },
     {
       id: randomUUID(),
@@ -33,7 +33,7 @@ const data: Projects = {
       url: 'https://dogs-by-dario.vercel.app',
       description: 'Projeto criado com REACTJS, utilizando a CLI CRA(create react app) para estilização do projeto usamos css modules, podemos criar contas de usuário, mas já existe também uma conta padrão, usuário: dog, senha: dog. Os uploads de fotos ficam apenas por 10 minutos no servidor, depois as fotos são deletadas. Esse Projeto é do curso "React Completo" que fiz na plataforma origamid.com onde é possivel aproveitar conceitos, estratégias, boas práticas com react js. O projeto conta também com uma biblioteca de gráficos chamada victory',
       img: '/projeto-dogs.png',
-      techs: [<FaReact key={1} />, <SiTypescript key={2} />]
+      techs: ['react']
     },
     {
       id: randomUUID(),
@@ -43,7 +43,7 @@ const data: Projects = {
       url: 'https://repo-favorito.vercel.app',
       description: 'Este é um projeto simples que permite adicionar repositórios famosos do GitHub e exibir informações sobre eles, incluindo detalhes do projeto, issues e o status das issues.',
       img: '/repo-favorito.png',
-      techs: [<FaReact key={1} />, <SiTypescript key={2} />, <SiStyledcomponents key={3} />]
+      techs: ['react', 'typescript', 'styled-components']
     },
     {
       id: randomUUID(),
@@ -53,7 +53,7 @@ const data: Projects = {
       url: 'https://tarefas-sh4kaa.vercel.app',
       description: 'Este Projeto lembra muito um TodoList, mas com um alguns upgrades. O site com conta com autenticação google e foi utilizado o firebase como banco. Você cria uma tarefa, essa tarefa pode ser pública ou privada. Sendo possível compartilhar o link da tarefa com outras pessoas, fazer comentários nas tarefas que são públicas',
       img: '/tarefas.png',
-      techs: [<TbBrandNextjs key={1} />, <SiTypescript key={2} />, <SiFirebase key={3} />]
+      techs: ['nextjs', 'typescript', 'firebase']
     },
     {
       id: randomUUID(),
@@ -63,7 +63,7 @@ const data: Projects = {
       url: 'https://dario-cms.vercel.app',
       description: 'Este é um projeto desenvolvido com nextJS introduzindo o conceito de SSG(server-side-rendering) e ISG(incremental-static-regeneration) onde podemos unir um pouco dos dois mundos.',
       img: '/pagina-cms.png',
-      techs: [<SiTypescript key={1} />, <TbBrandNextjs key={2} />, <FaSass key={3} />, <SiPrismic key={4} />]
+      techs: ['typescript', 'nextjs', 'sass', 'prismic']
     },
     {
       id: randomUUID(),
@@ -73,7 +73,7 @@ const data: Projects = {
       url: 'https://project-e-commerce-dario.vercel.app',
       description: 'Esse é projeto próprio de um protótipo de um site de venda de produtos comtodas as principais funcionalidades de um site de venda. O gerenciamento do carrinho é feito no localStorage onde é possivel persistir os dados. Foi utilizado também uma api para consumo dos dados https://fakestoreapi.com/products.',
       img: '/e-commerce.png',
-      techs: [<TbBrandNextjs key={1} />, <SiTypescript key={2} />]
+      techs: ['nextjs', 'typescript']
     },
   ]
 }

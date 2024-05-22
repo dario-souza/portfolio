@@ -1,6 +1,3 @@
-import React from "react";
-import { IconType } from "react-icons/lib";
-
 export type Projects = {
   portfolios: Portfolio[];
 };
@@ -13,5 +10,5 @@ export type Portfolio = {
   url: string;
   description: string;
   img: string;
-  techs: React.ReactElement[];
+  techs: string[];
 };

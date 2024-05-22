@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { FaReact } from 'react-icons/fa'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
 import Image from 'next/image'
@@ -8,9 +8,22 @@ import { Portfolio } from '@/app/type/types-portfolios'
 import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 import useMedia from '@/app/hooks/use-media'
+import { SiFirebase, SiPrismic, SiSass, SiTypescript } from 'react-icons/si'
+import { RiNextjsFill } from 'react-icons/ri'
 
 type ProjectsCardsProps = {
   card: Portfolio
+}
+
+
+
+const icons: { [key: string]: ReactElement } = {
+  react: <FaReact />,
+  typescript: <SiTypescript />,
+  prismic: <SiPrismic />,
+  nexjs: <RiNextjsFill />,
+  firebase: <SiFirebase />,
+  sass: <SiSass />
 }
 
 const PortfolioCards = ({ card }: ProjectsCardsProps) => {
@@ -49,7 +62,7 @@ const PortfolioCards = ({ card }: ProjectsCardsProps) => {
           />
         </Link>
         <div className='hidden gap-3 min-[850px]:flex'>
-          {card.techs.map((tech, index) => <span className='text-[22px]' key={index}>{tech}</span>)}
+          {card.techs.map((tech, index) => <span className='text-[22px]' key={index}>{icons[tech]}</span>)}
         </div>
       </CardFooter>
     </Card>
