@@ -6,7 +6,6 @@ const nextConfig = {
         hostname: "github.com",
         protocol: "https",
         port: "",
-        pathname: "/*.*",
       },
     ],
   },
