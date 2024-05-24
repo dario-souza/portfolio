@@ -27,7 +27,7 @@ const icons: { [key: string]: ReactElement } = {
   react: <ReactIcon />,
   typescript: <Typescipt />,
   prismic: <Prismic />,
-  nextjs: <NextjsIcon />,
+  nextjs: <SiNextdotjs size={25} />,
   firebase: <Firebase />,
   sass: <Sass />,
   'styled-components': <StyledComponents />
