@@ -2,7 +2,7 @@
 import React, { ReactElement } from 'react'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
 import Image from 'next/image'
-import { Button } from './ui/button'
+import { buttonVariants } from './ui/button'
 import { Portfolio } from '@/app/type/types-portfolios'
 import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
@@ -16,8 +16,7 @@ import Typescipt from '@/icons/typescript'
 import StyledComponents from '@/icons/styled-components'
 // import NextIcon from '@/icons/nextjs'
 import { SiNextdotjs } from 'react-icons/si'
-import { RiNextjsLine } from "react-icons/ri";
-import NextjsIcon from '@/icons/nextjs'
+
 
 type ProjectsCardsProps = {
   card: Portfolio
@@ -52,22 +51,20 @@ const PortfolioCards = ({ card }: ProjectsCardsProps) => {
         </div>
       </CardContent>
       <CardFooter>
-        {screenSmall ? <Button variant='destructive' size='sm' >Saiba mais</Button> : <Button variant='destructive' >Saiba mais</Button>}
-        <Link href={card.repo} className='ml-3' target='_blank'>
+        {screenSmall ?
+          <Link href={card.url} target='_blank' className={buttonVariants({ variant: 'secondary', size: 'sm' })} >Ver site</Link>
+          :
+          <Link href={card.url} target='_blank' className={buttonVariants({ variant: 'secondary', size: 'lg' })} >Ver site</Link>
+        }
+        <Link href={card.repo} className='ml-3 mr-auto' target='_blank'>
           <GitHubLogoIcon
             width={25}
             height={25}
             className='hover:text-[#918FF3] transition-all duration-500'
           />
         </Link>
-        <Link href={card.url} className='ml-3 mr-auto' target='_blank'>
-          <GlobeIcon
-            width={25}
-            height={25}
-            className='hover:text-[#918FF3] transition-all duration-500'
-          />
-        </Link>
-        <div className='hidden gap-3 min-[850px]:flex'>
+
+        <div className={`hidden gap-3 max-[600px]:flex min-[840px]:flex`}>
           {card.techs.map((tech) => {
             const IconComponent = icons[tech]
             return IconComponent ? <span key={tech}>{IconComponent}</span> : null
