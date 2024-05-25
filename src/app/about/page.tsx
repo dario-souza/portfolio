@@ -14,18 +14,18 @@ const AboutPage = () => {
         <p className='mt-4 italic text-center text-xs font-thin'>Programação por paixão, dinheiro é consequência, e pagando bem, que mal tem rs</p>
       </div>
       <div className='sm:col-span-2 relative about'>
-        <h1 className='text-center text-2xl font-semibold'>Um pouco sobre mim...</h1>
+        <h1 className='text-center text-2xl font-semibold my-6'>Um pouco sobre mim...</h1>
         <p className='leading-6 font-medium'>
-          Me chamo Dário👋, sou natural de Osasco, São paulo, mas moro na zona oeste de são paulo, sou formado em Análise e desenvolvimento de sistemas pela <strong>Universidade Paulista <span className='italic'>UNIP</span> campus Chácara Sto. Antonio, zona sul. </strong>   Como todo apaixonado por tecnologia, é natural ter hobbies que façam jus à tecnologia, como por exemplo gostar de games, jogos de computador, dos mais atuais até os jogos mais retrô, gosto do bom e velho rock&apos;n roll também, toco um pouco de violão, gosto animes e de gatos 😼.
+          Me chamo Dário👋, sou natural de Osasco, São paulo, mas moro na zona oeste de são paulo, sou formado em Análise e desenvolvimento de sistemas pela <strong>Universidade Paulista <span className='italic'>UNIP</span> campus Chácara Sto. Antonio, zona sul. </strong>   Como todo apaixonado por tecnologia, tenho hobbies que já são de praxe para quem faz parte desse meio tecnológico, gosto de games, jogos de computador, dos mais atuais até os jogos mais retrô, gosto do bom e velho rock&apos;n roll também, toco um pouco de violão, gosto animes e de gatos 😼.
         </p>
-        <h1 className='text-center text-2xl font-semibold'>O interesse</h1>
+        <h1 className='text-center text-2xl font-semibold my-6'>O interesse por tecnologia</h1>
         <p className='leading-6'>
           Meu interesse pela tecnologia surgiu desde minha adolescência, meu primeiro contato com tecnologia foi no ensino fundamental, onde uma vez por semana tínhamos aula de informática, foi quando aprendi à salvar um arquivo de imagem usando o aplicativo paint, na época o sistema operacional era Windows 98 e o acesso à informática era bem restrito, nem todo mundo tinha acesso a um computador pessoal, e eu estava nessa lista de pessoas. <br /> <br /> Desde então, fiquei fissurado por tecnologia, queria saber como realmente funcionava o sistema de um computador, como era possível emular jogos antigos no computador, quem desenvolvia os programas e como tudo aquilo era feito, eram questões que burbulhavam em minha mente naquela época.
 
           O que eu precisava era apenas de um computador, não precisava de internet e inclusive nessa época não existia internet banda larga, só internet discada, que cheguei à ter acesso graças ao meu primeiro trabalho, meu ex patrão tinha computador com internet discada, ele deixava eu usar aos finais de semana, ele também me ajudou a conquistar meu primeiro computador um &quot;AMD K6 550mhz&quot; e nessa época aprendi a fazer reparos em computador, tanto no sistema quanto na parte física montagem e manutenção.
         </p>
 
-        <h1 className='text-center text-2xl font-semibold'>Atualmente</h1>
+        <h1 className='text-center text-2xl font-semibold my-6'>Atualmente</h1>
         <p className='leading-6'>
           Atualmente trabalho como como analista de suporte, reservo sempre um tempo para programar e estudar programação, participo de eventos e imersões de programação sempre alinhado com meus objetivos, dentro do escopo de front-end e back-end, mas por enquanto meu forte é mais front-end. Tenho bons conhecimentos em desenvolvimento web utilizando as tecnologias HTML Javascript e css puro, e também utilizando frameworks e bibliotecas como por exemplo, React e Nextjs, onde é possível desenvolver aplicações web escaláveis de uma forma mais moderna e robusta e de fácil manutenabilidade. Utilizo versionamento de código com git e github, tenho conhecimento de como integrar API&apos;s no front-end, tenho um pouco de familiaridade com back-end utilizando NodeJS
         </p>
