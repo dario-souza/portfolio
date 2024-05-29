@@ -25,10 +25,27 @@ const AboutPage = () => {
           O que eu precisava era apenas de um computador, não precisava de internet e inclusive nessa época não existia internet banda larga, só internet discada, que cheguei à ter acesso graças ao meu primeiro trabalho, meu ex patrão tinha computador com internet discada, ele deixava eu usar aos finais de semana, ele também me ajudou a conquistar meu primeiro computador um &quot;AMD K6 550mhz&quot; e nessa época aprendi a fazer reparos em computador, tanto no sistema quanto na parte física montagem e manutenção.
         </p>
 
-        <h1 className='text-center text-2xl font-semibold my-6'>Atualmente</h1>
+        <h1 className='text-center text-2xl font-semibold my-6'>Habilidades Front-end</h1>
         <p className='leading-6'>
-          Atualmente trabalho como como analista de suporte, reservo sempre um tempo para programar e estudar programação, participo de eventos e imersões de programação sempre alinhado com meus objetivos, dentro do escopo de front-end e back-end, mas por enquanto meu forte é mais front-end. Tenho bons conhecimentos em desenvolvimento web utilizando as tecnologias HTML Javascript e css puro, e também utilizando frameworks e bibliotecas como por exemplo, React e Nextjs, onde é possível desenvolver aplicações web escaláveis de uma forma mais moderna e robusta e de fácil manutenabilidade. Utilizo versionamento de código com git e github, tenho conhecimento de como integrar API&apos;s no front-end, tenho um pouco de familiaridade com back-end utilizando NodeJS
+          Tenho uma base sólida em lógica de programação, domino bem, Html, Css, Javascript, Typescript, Nextjs/React, programação orientada a objetos, versionamento com git e github. Dentro do escopo de front-end, entendo conceitos de SPA e server side rendering, na estilização do HTML sei utilizar Sass, Tailwindcss e Styled-components, Css modules e Back-end, consumo e tratamento de dados de API&apos;s e formulários.<br /> <br /> Procuro sempre me manter atualizado, participo de eventos de programação e imersões, como por exemplo NLW da rockeseat e atualmente estou estudando sobre aplicações em containers com docker e testes unitários.
         </p>
+
+        <h1 className='text-center text-2xl font-semibold my-6'>Cursos</h1>
+        <ul className='ml-4 list-disc leading-6'>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.udemy.com/certificate/UC-437ed9f2-373d-4432-95c3-ecc375ca4eb8/" target='_blank'>C# COMPLETO Programação Orientada a Objetos + Projetos</a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.udemy.com/certificate/UC-E5MFWN2X/" target='_blank'>C# primeiros passos: Lógica de Programação e Algoritmos</a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.origamid.com/certificate/9991bd13/" target='_blank'>CSS Flexbox</a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.origamid.com/certificate/2043cdc7/" target='_blank'>CSS Grid Layout</a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.origamid.com/certificate/45472a0f/" target='_blank'>JavaScript
+            Completo ES6+
+          </a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.origamid.com/certificate/448df1c2" target='_blank'>React Completo</a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.udemy.com/certificate/UC-c4db004a-506a-40d4-a36a-4f9e12939343/" target='_blank'>TypeScript do básico ao avançado (c/ React, Express)</a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.udemy.com/certificate/UC-6197c104-f92e-4e7c-a2b2-30b8db164a08/" target='_blank'>Tailwind CSS do básico ao avançado + Projetos</a></li>
+          <li><a className='hover:text-[#918FF3] transition-colors' href="https://www.origamid.com/certificate/e31d6962" target='_blank'>TypeScript para
+            Iniciantes
+          </a></li>
+        </ul>
 
       </div>
     </section>
