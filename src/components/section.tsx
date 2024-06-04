@@ -1,8 +1,11 @@
+import { cn } from '@/lib/utils'
 import React from 'react'
 
-const Section = ({ children }: { children: React.ReactNode }) => {
+type SectionProps = React.ComponentProps<'section'>
+
+const Section = ({ children, className }: SectionProps) => {
   return (
-    <section className="flex justify-center items-center max-w-screen-lg mx-auto px-4 md:px-8 h-[calc(100vh-145px)]">
+    <section className={cn('max-w-screen-lg mx-auto px-4 py-4 sm:px-8', className)}>
       {children}
     </section>
   )
