@@ -62,6 +62,10 @@
   .fullscreen {
     @apply flex justify-center items-center max-w-screen-lg mx-auto px-4 md:px-8 h-[calc(100vh-145px)] flex-wrap overflow-y-auto gap-4;
   }
+
+  .high-screen {
+    @apply h-[calc(100vh-145px)];
+  }
 }
 @media (min-width: 640px) {
   .about::before {
