@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <Section>
+    <Section className='high-screen flex justify-center items-center'>
       <ContactPage />
     </Section>
   )

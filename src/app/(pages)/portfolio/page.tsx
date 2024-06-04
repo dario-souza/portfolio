@@ -2,11 +2,12 @@
 import PortfolioCards from '@/components/portfolio-card'
 import { Metadata } from 'next'
 import React from 'react'
-import { Projects } from '../type/types-portfolios'
+import { Projects } from '../../type/types-portfolios'
 import { randomUUID } from 'crypto'
 import { FaReact, FaSass } from 'react-icons/fa'
 import { SiFirebase, SiPrismic, SiStyledcomponents, SiTypescript } from 'react-icons/si'
 import { TbBrandNextjs } from "react-icons/tb";
+import Section from '@/components/section'
 
 
 
@@ -80,11 +81,11 @@ const data: Projects = {
 
 const PortfolioPage = () => {
   return (
-    <section className='max-w-screen-lg mx-auto px-4 py-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4'>
+    <Section className='grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4'>
       {data.portfolios.map(card => (
         <PortfolioCards key={card.id} card={card} />
       ))}
-    </section>
+    </Section>
   )
 }
 
