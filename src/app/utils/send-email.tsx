@@ -5,13 +5,14 @@ const sendEmail = async (data: {
   email: string;
   message: string;
 }) => {
-  await fetch("/api/send", {
+  const response = await fetch("/api/send", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
   });
+  return response.json();
 };
 
 export default sendEmail;
