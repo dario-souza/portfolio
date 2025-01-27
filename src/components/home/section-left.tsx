@@ -24,10 +24,10 @@ export const SectionLeft = () => {
           <SiLinkedin color="#0A66C2" size={30} />
         </Link>
         <Link href='https://github.com/dario-souza' target='_blank'>
-          <FaGithub color="#010409" size={30} />
+          <FaGithub size={30} />
         </Link>
         <Link href='/contact'>
-          <MdEmail size={30} />
+          <MdEmail className="text-[#0A66C2] dark:text-white" size={30} />
         </Link>
       </div>
     </div>

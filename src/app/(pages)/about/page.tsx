@@ -12,7 +12,7 @@ const AboutPage = () => {
   return (
     <Section className='grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-x-8'>
       <div className='mb-8'>
-        <Image className='rounded-full shadow-md mx-auto' src="https://github.com/sh4kaa.png" alt='Dario-foto' width={460} height={460} sizes="(max-width: 600px) 100vw, 60vw" priority />
+        <Image className='rounded-full shadow-md mx-auto' src="https://github.com/dario-souza.png" alt='Dario-foto' width={460} height={460} sizes="(max-width: 600px) 100vw, 60vw" priority />
         <Paragraph className='mt-4 italic text-center text-xs font-thin'>Programação por paixão, dinheiro é consequência, e pagando bem, que mal tem rs</Paragraph>
       </div>
       <div className='sm:col-span-2 relative about'>
