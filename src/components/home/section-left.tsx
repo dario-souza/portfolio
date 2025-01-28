@@ -21,13 +21,13 @@ export const SectionLeft = () => {
       </p>
       <div className="mt-4 flex gap-4">
         <Link href="https://www.linkedin.com/in/dario-souza/" target="_blank">
-          <SiLinkedin color="#0A66C2" size={30} />
+          <SiLinkedin color="#0A66C2" size={30} className="hover:scale-110" />
         </Link>
         <Link href='https://github.com/dario-souza' target='_blank'>
-          <FaGithub size={30} />
+          <FaGithub size={30} className="hover:scale-110" />
         </Link>
         <Link href='/contact'>
-          <MdEmail className="text-[#0A66C2] dark:text-white" size={30} />
+          <MdEmail className="text-[#0A66C2] dark:text-white hover:scale-110" size={30} />
         </Link>
       </div>
     </div>
