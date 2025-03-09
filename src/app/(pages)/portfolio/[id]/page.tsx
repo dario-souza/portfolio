@@ -18,7 +18,7 @@ const PortfolioDetails = ({ params: { id } }: Params) => {
     <Section>
       <h1 className="font-medium text-2xl text-center">{title?.title}</h1>
       {portfolios.map((port) =>
-        port.id === id ? <p>{port.description}</p> : null
+        port.id === id ? <p key={port.id}>{port.description}</p> : null
       )}
       <Link className="block mt-4" href="/portfolio">
         <Button>Voltar</Button>
