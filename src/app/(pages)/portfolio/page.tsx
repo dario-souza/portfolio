@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export const data: Projects = {
   portfolios: [
     {
-      id: randomUUID(),
+      id: '1',
       title: 'Todo-list',
       subtitle: 'Aplicação de lista de tarefas',
       repo: 'https://github.com/Sh4kaa/todo-list',
@@ -23,7 +23,7 @@ export const data: Projects = {
       techs: ['react', 'typescript'],
     },
     {
-      id: randomUUID(),
+      id: '2',
       title: 'Projeto dogs',
       subtitle: 'Uma espécie de rede social para cachorro',
       repo: 'https://github.com/Sh4kaa/dogs',
@@ -34,7 +34,7 @@ export const data: Projects = {
       techs: ['react'],
     },
     {
-      id: randomUUID(),
+      id: '3',
       title: 'Repo favorito',
       subtitle: 'Um site que lista repositórios com suas issues',
       repo: 'https://github.com/Sh4kaa/projeto-repositorios',
@@ -45,7 +45,7 @@ export const data: Projects = {
       techs: ['react', 'typescript', 'styled-components', 'nextjs'],
     },
     {
-      id: randomUUID(),
+      id: '4',
       title: 'Tarefas',
       subtitle: 'Aplicação de lista de tarefas',
       repo: 'https://github.com/Sh4kaa/tarefas',
@@ -56,7 +56,7 @@ export const data: Projects = {
       techs: ['nextjs', 'typescript', 'firebase'],
     },
     {
-      id: randomUUID(),
+      id: '5',
       title: 'Página web com CMS',
       subtitle: 'Uma página web com sistema de CMS',
       repo: 'https://github.com/Sh4kaa/pagina-web-com-cms',
@@ -67,7 +67,7 @@ export const data: Projects = {
       techs: ['typescript', 'nextjs', 'sass', 'prismic'],
     },
     {
-      id: randomUUID(),
+      id: '6',
       title: 'Página web de compras',
       subtitle: 'Um e-commerce',
       repo: 'https://github.com/dario-souza/shop-green',
