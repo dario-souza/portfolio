@@ -10,7 +10,7 @@ type Params = {
 
 const portfolios = data.portfolios
 
-const PortfolioDetails = ({ params: { id } }: Params) => {
+const PortfolioDetails = async ({ params: { id } }: Params) => {
   const portfolio = portfolios.find((port) => port.id === id)
 
   if (!portfolio) {
