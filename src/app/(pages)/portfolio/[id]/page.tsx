@@ -11,15 +11,16 @@ type Params = {
 const portfolios = data.portfolios
 
 const PortfolioDetails = ({ params: { id } }: Params) => {
-  const title = portfolios.find((title) =>
-    title.id === id ? title.title : null
-  )
+  const portfolio = portfolios.find((port) => port.id === id)
+
+  if (!portfolio) {
+    return <div>Portfolio not found</div>
+  }
+
   return (
     <Section>
-      <h1 className="font-medium text-2xl text-center">{title?.title}</h1>
-      {portfolios.map((port) =>
-        port.id === id ? <p key={port.id}>{port.description}</p> : null
-      )}
+      <h1 className="font-medium text-2xl text-center">{portfolio.title}</h1>
+      <p>{portfolio.description}</p>
       <Link className="block mt-4" href="/portfolio">
         <Button>Voltar</Button>
       </Link>
