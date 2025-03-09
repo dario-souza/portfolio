@@ -3,20 +3,13 @@ import { Metadata } from 'next'
 import React from 'react'
 import { Projects } from '../../type/types-portfolios'
 import { randomUUID } from 'crypto'
-import { FaReact, FaSass } from 'react-icons/fa'
-import {
-  SiFirebase,
-  SiPrismic,
-  SiStyledcomponents,
-  SiTypescript,
-} from 'react-icons/si'
-import { TbBrandNextjs } from 'react-icons/tb'
+
 import Section from '@/components/section'
 
 export const metadata: Metadata = {
   title: 'Dario | Portifólio',
 }
-const data: Projects = {
+export const data: Projects = {
   portfolios: [
     {
       id: randomUUID(),
